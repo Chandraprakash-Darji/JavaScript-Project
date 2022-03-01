@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image {
+  @apply rounded-2xl w-10 h-96 object-cover bg-center transition-all duration-1000 ease-in relative shadow-xl shadow-slate-600/30;
+}
+.image p {
+  @apply invisible opacity-0 text-white absolute bottom-0 mx-3 my-2 font-bold;
+}
+.active {
+  @apply w-52 sm:w-80;
+}
+.active p {
+  @apply visible opacity-100 transition-all duration-1000 ease-in delay-300;
+}
