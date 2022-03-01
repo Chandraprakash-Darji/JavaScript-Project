@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.menuContainer {
+  @apply bg-blue-700 w-40 sm:w-64 h-40 sm:h-64 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2  transition-all duration-500 z-20 shadow-xl shadow-slate-500/40;
+}
+.menuContainer.active {
+  @apply -rotate-90;
+}
+#page {
+  @apply transition-all duration-1000 origin-top-left w-screen bg-slate-100 z-10  top-0 left-0 shadow-[0_0px_60px_-15px_rgba(0,0,0,0.3)] px-5;
+}
+#page.active {
+  @apply -rotate-[20deg];
+}
+.bottomNav {
+  @apply fixed text-white left-8 bottom-20 flex flex-col gap-8 tracking-wider font-bold text-3xl z-10 -translate-x-96 transition-all duration-1000;
+}
+.bottomNav.active {
+  @apply translate-x-0;
+}
+.bottomNav.active a:nth-child(2) {
+  @apply ml-5;
+}
+.bottomNav.active a:nth-child(3) {
+  @apply ml-10;
+}

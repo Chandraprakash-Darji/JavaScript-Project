@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Rotating navigation menu</title>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <main class="min-h-screen relative bg-slate-700">
+      <div class="menuContainer">
+        <img
+          src="./src/Images/menu.svg"
+          alt="menu Btn"
+          id="menuOpen"
+          class="w-9 h-9 sm:w-12 sm:h-12 absolute bottom-0 right-0 m-8 sm:m-12 cursor-pointer"
+        />
+        <img
+          src="./src/Images/close.svg"
+          alt="close menu btn"
+          id="closeOpen"
+          class="w-9 h-9 sm:w-12 sm:h-12 absolute bottom-0 left-0 m-8 sm:m-12 cursor-pointer"
+        />
+      </div>
+      <nav class="bottomNav">
+        <a href="#" class="flex gap-3 items-center transition-all"
+          ><img class="h-8" src="./src/Images/home.svg" alt="" /> Home</a
+        >
+        <a href="#" class="flex gap-3 items-center transition-all delay-75"
+          ><img class="h-8" src="./src/Images/person.svg" alt="" /> About</a
+        >
+        <a href="#" class="flex gap-3 items-center transition-all delay-100"
+          ><img class="h-8" src="./src/Images/mail.svg" alt="" /> Conntact</a
+        >
+      </nav>
+      <section id="page">
+        <div class="container m-auto pt-24 sm:pt-36 pb-20">
+          <h1 class="text-3xl font-bold mb-10">Amazing Article</h1>
+          <p class="italic text-black/80">Florin Pop</p>
+          <p class="py-5 w-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure
+            excepturi reprehenderit quidem, laborum quibusdam veritatis deserunt
+            architecto iste, numquam beatae consectetur ab. Hic, nihil iure
+            accusantium deserunt dolorum nemo voluptates possimus. Voluptatem
+            quaerat provident consequatur. Consequatur dolor adipisci qui
+            consectetur magnam odio quibusdam cupiditate, tempore iste, sapiente
+            magni porro maxime quia, at libero praesentium. Quaerat placeat quis
+            iusto beatae doloribus sequi dolorem atque tempore quasi. Eveniet
+            voluptas voluptatum voluptatibus obcaecati quia sequi, facere
+            nesciunt provident culpa. Aliquid distinctio earum hic modi,
+            delectus magnam cumque. Ducimus magni, omnis laborum nihil
+            voluptatibus hic dolores perferendis praesentium nostrum nesciunt
+            pariatur sunt, possimus quae illo et nam provident fuga assumenda
+            reiciendis delectus necessitatibus iste amet deserunt! Neque illum
+            officiis minus, delectus vitae praesentium dolorum possimus repellat
+            incidunt.
+          </p>
+          <h2 class="font-bold text-2xl">My Dog</h2>
+          <img
+            src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+            alt="Dog"
+            class="py-5"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            consectetur provident fugit modi minus natus possimus aut? Rerum,
+            excepturi debitis aut est aliquid quam aliquam reiciendis numquam
+            eligendi autem tenetur, sapiente nesciunt ea molestiae. Odit
+            accusamus unde a vel perspiciatis quaerat dolore sequi incidunt
+            temporibus, quo beatae, dolores molestias placeat mollitia nisi
+            voluptates eaque ipsam? Laborum quia dicta soluta minus enim eum,
+            fuga praesentium debitis suscipit at facere nostrum ex, ipsam
+            dignissimos sit nulla obcaecati adipisci aliquam, quibusdam ab
+            minima doloremque numquam sed quam! Harum soluta sit atque ullam?
+            Adipisci repellat repellendus ratione nihil dignissimos voluptatibus
+            vero earum nesciunt eaque.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
