@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#search.active {
+  @apply w-96 p-3;
+}
