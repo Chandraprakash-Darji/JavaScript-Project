@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply flex flex-col items-center justify-center gap-10 tracking-widest bg-cover bg-center bg-no-repeat 
+}
+
+.ps5 {
+  background-image: linear-gradient(
+      rgba(126, 34, 206, 0.7),
+      rgba(126, 34, 206, 0.7)
+    ),
+    url("./Images/ps.jpg");
+}
+.xbox {
+  background-image: linear-gradient(
+      rgba(21, 128, 61, 0.7),
+      rgba(21, 128, 61, 0.7)
+    ),
+    url("./Images/xbox.jpg");
+}
+main.activeLeft {
+  grid-template-columns: 75vw 1fr;
+}
+main.activeRight {
+  grid-template-columns: 1fr 75vw;
+}
