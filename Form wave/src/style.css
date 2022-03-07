@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label {
+  @apply block mb-2 ml-2 font-medium text-gray-900 dark:text-gray-300 translate-y-10 z-10 transition-all duration-300;
+}
+
+.active{
+  @apply ml-0 translate-y-0;
+} 
+/* label[for="email"]{
+  @apply ml-0 translate-y-0
+}  */
+/* .emailLable:focus,
+.emailLable:active {
+  @apply ml-0 translate-y-0;
+} */
+.active span{
+  @apply transition-all duration-300 delay-500
+}
