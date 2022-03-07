@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section {
-  @apply flex flex-col items-center justify-center gap-10 tracking-widest bg-cover bg-center bg-no-repeat 
+  @apply flex flex-col items-center justify-center gap-10 tracking-widest bg-cover bg-center bg-no-repeat w-1/2 overflow-hidden h-full absolute whitespace-nowrap transition-all duration-700; 
 }
 
 .ps5 {
@@ -12,6 +12,7 @@
       rgba(126, 34, 206, 0.7)
     ),
     url("./Images/ps.jpg");
+  @apply left-0 top-0;
 }
 .xbox {
   background-image: linear-gradient(
@@ -19,10 +20,22 @@
       rgba(21, 128, 61, 0.7)
     ),
     url("./Images/xbox.jpg");
+  @apply right-0 top-0;
 }
-main.activeLeft {
-  grid-template-columns: 75vw 1fr;
+.activeRight .xbox,
+.activeLeft .ps5 {
+  @apply w-3/4 z-10;
 }
-main.activeRight {
-  grid-template-columns: 1fr 75vw;
+.activeRight .ps5,
+.activeLeft .xbox{
+  @apply w-3/12 ;
+
 }
+/* 
+.activeRight .xbox,
+.activeLeft .ps5 {
+  @apply w-3/4 z-10;
+}
+.activeLeft .ps5,
+.activeRight .xbox {
+} */
