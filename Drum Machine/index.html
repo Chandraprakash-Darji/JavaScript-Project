@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Split Landing Page</title>
+  </head>
+
+  <body class="bg-slate-700 min-h-screen flex justify-center items-center">
+    <main class="relative text-white transition-all duration-500;">
+      <div
+        id="drum-machine"
+        class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 grid grid-cols-2"
+      >
+        <div class="keyContainer">
+          <button type="button" class="drum-pad" id="Q">Q</button>
+          <button type="button" class="drum-pad" id="W">W</button>
+          <button type="button" class="drum-pad" id="E">E</button>
+          <button type="button" class="drum-pad" id="A">A</button>
+          <button type="button" class="drum-pad" id="S">S</button>
+          <button type="button" class="drum-pad" id="D">D</button>
+          <button type="button" class="drum-pad" id="Z">Z</button>
+          <button type="button" class="drum-pad" id="X">X</button>
+          <button type="button" class="drum-pad" id="C">C</button>
+        </div>
+        <div class="p-6 flex flex-col justify-around items-start gap-5">
+          <input type="checkbox" id="PowerKey" class="sr-only" checked />
+          <label for="PowerKey" class="toggleLabel powerKeyLabel">
+            <div class="toggleBtnBack">
+              <div class="toggleBtn active"></div>
+            </div>
+            <span
+              class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Power</span
+            >
+          </label>
+          <button class="previewText">Play Music</button>
+          <input type="range" name="volume" id="volumeSlider" value="50" />
+          <input type="checkbox" id="bankKey" class="sr-only" />
+          <label for="bankKey" class="toggleLabel bankLabel">
+            <div class="toggleBtnBack">
+              <div class="toggleBtn"></div>
+            </div>
+            <span
+              class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Bank</span
+            >
+          </label>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/script/controler.ts"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
