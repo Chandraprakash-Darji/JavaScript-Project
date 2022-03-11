@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h3 {
+  @apply text-gray-400 text-center mb-2;
+}
+.textBox {
+  @apply p-4 px-12 text-3xl text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300;
+}

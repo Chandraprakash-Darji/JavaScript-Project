@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Event keyCode</title>
+  </head>
+
+  <body
+    class="h-screen flex gap-6 items-center justify-center bg-slate-900 text-slate-900 transition-all duration-1000"
+  >
+    <div class="textBox absolute any">
+      <h2>Press Any key to continue</h2>
+    </div>
+    <div class="opacity-0">
+      <h3>event.key</h3>
+      <div id="key" class="textBox">
+        <h2>event.key Value</h2>
+      </div>
+    </div>
+
+    <div class="opacity-0">
+      <h3>event.keyCode</h3>
+      <div id="keyCode" class="textBox">
+        <h2>event.keyCode Value</h2>
+      </div>
+    </div>
+
+    <div class="opacity-0">
+      <h3>event.code</h3>
+      <div id="code" class="textBox">
+        <h2>event.code Value</h2>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
