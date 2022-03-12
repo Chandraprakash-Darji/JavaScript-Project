@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 57%, 49%) 0%,
+    hsl(273, 57%, 49%) 50%,
+    rgb(196, 56, 56) 0%
+  );
+}
+.mainContainer {
+  @apply bg-white text-white sm:text-gray-800 rounded-lg shadow-black/50 shadow-2xl relative text-center flex cursor-pointer w-16 transition-all duration-1000;
+}
+.menu {
+  @apply flex flex-col  justify-between h-5 w-6 m-5 transition-all duration-1000 ml-auto relative;
+} 
+.line {
+  @apply bg-black h-[.2rem] w-7 block origin-center transition-all duration-1000 absolute translate-x-0 translate-y-0;
+}
+.mainContainer.active {
+  @apply w-[21.4rem];
+}
+.mainContainer.active .menu {
+  @apply w-5 h-5 ;
+}
+.mainContainer.active .menu .line {
+  @apply w-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+.mainContainer.active .menu .line:nth-child(1) {
+  @apply rotate-[405deg];
+}
+.mainContainer.active .menu .line:nth-child(2) {
+  @apply -rotate-[405deg];
+}
+.links {
+  @apply opacity-0 invisible flex gap-4 p-5 border-r-2 border-transparent absolute translate-x-28 transition-all duration-1000 ;
+}
+.links a {
+  @apply transition-all duration-1000 delay-200;
+  transform: rotateY(500deg);
+}
+.mainContainer.active .links {
+  @apply opacity-100 visible border-gray-700/20 absolute translate-x-0;
+}
+.mainContainer.active .links a {
+  @apply delay-[0];
+  transform: rotateY(0deg);
+}
