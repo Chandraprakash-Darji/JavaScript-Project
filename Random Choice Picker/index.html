@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Random Choice Picker</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br md:bg-gradient-to-b from-FmGrSoftViolet to-FmGrSoftBlue sm:flex flex-col justify-center items-center font-FMKumbhSans"
+  >
+    <main
+      class="bg-white text-white sm:text-gray-800 w-full sm:max-w-lg sm:rounded-3xl p-3 sm:p-8 shadow-black/50 shadow-2xl relative text-center flex flex-col gap-5 pt-10 sm:block sm:mt-0 min-h-screen sm:min-h-min bg-gradient-to-br from-FmGrSoftViolet to-FmGrSoftBlue sm:from-white sm:to-white"
+    >
+      <h1 class="sm:font-medium tracking-wide font-bold">
+        Enter all of the choices divided by a comma (',').<br />
+        Press enter when you're done
+      </h1>
+      <textarea
+        id="choiceText"
+        rows="4"
+        class="block mt-5 p-2.5 w-full text-sm rounded-lg border bg-gray-200 sm:bg-gray-700 border-gray-300 sm:border-gray-600 placeholder-gray-600 sm:placeholder-gray-300 shadow-lg shadow-FmGrSoftBlue/50 outline-none text-gray-900"
+        placeholder="Enter Choices Here ..."
+      ></textarea>
+      <div class="choiceBox"></div>
+    </main>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
