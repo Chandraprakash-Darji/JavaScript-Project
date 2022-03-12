@@ -47,7 +47,7 @@ class App {
   _volumeChange(handler: Function): void {
     this._volumeSlider?.addEventListener("input", (e) => {
       this._previewTextChange(
-        `Volume ${(e.target as HTMLButtonElement).value}`
+        `Volume ${(e.target as HTMLButtonElement).innerText}`
       );
       handler((e.target as HTMLButtonElement).value);
       setTimeout(() => {
@@ -65,7 +65,7 @@ class App {
     });
   }
   _previewTextChange(msg: string) {
-    this._previewText!.innerHTML = msg;
+    this._previewText!.textContent = msg;
   }
 }
 
