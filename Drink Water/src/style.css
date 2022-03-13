@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainGlass {
+  @apply h-80 border-4 w-40 my-8 rounded-b-[2.5rem] border-white bg-white/40 relative overflow-hidden;
+}
+.remaining {
+  @apply text-gray-700 flex flex-col justify-center items-center transition-all;
+}
+.drinked {
+  @apply absolute bottom-0 bg-gray-700 text-gray-50 w-full flex justify-center items-center text-2xl font-semibold tracking-widest transition-all;
+}
+.glassesSelect {
+  @apply mt-8 grid grid-cols-4 text-black text-center gap-4 bg-white/20 p-5 border-4 rounded-xl;
+}
+.glass {
+  @apply h-24 w-12 border-2 border-black cursor-pointer bg-white/70 rounded-b-xl flex justify-center items-center transition-all;
+}
+.glass.active {
+  @apply bg-gray-700 text-gray-50;
+}
