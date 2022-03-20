@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 90%, 45%) 0%,
+    hsl(273, 90%, 49%) 50%,
+    rgb(253, 22, 22) 0%
+  );
+}
+main {
+  grid-template-columns: max-content 1fr max-content;
+}
+.arrow {
+  @apply w-14 z-10 hover:scale-105 transition-all duration-500 cursor-pointer active:scale-125;
+}
+.slider {
+  @apply w-[40rem] h-[30rem] relative flex gap-28 transition-all duration-500;
+}
+.dots {
+  @apply flex gap-2;
+}
+.dot {
+  @apply w-2 h-2 bg-gray-400 rounded-full hover:bg-gray-50 transition-all duration-500 cursor-pointer;
+}
+.dot.active {
+  @apply bg-gray-50;
+}
