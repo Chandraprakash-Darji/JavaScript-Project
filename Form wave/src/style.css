@@ -3,73 +3,11 @@
 @tailwind utilities;
 
 label {
-  @apply mb-2 ml-2 font-medium text-gray-900 dark:text-gray-300  z-10 transition-all duration-300 flex;
+  @apply mb-2 ml-2 font-medium text-gray-300 z-10 transition-all duration-300 flex;
 }
-
 label span {
-  @apply translate-y-10 block  transition-all duration-300; 
+  @apply translate-y-10 block  transition-all duration-300;
 }
 label.active span {
   @apply translate-y-0;
-}
-label span:nth-child(1){
-  @apply delay-[0ms]
-}
-label span:nth-child(2){
-  @apply delay-[10ms]
-}
-label span:nth-child(3){
-  @apply delay-[20ms]
-}
-label span:nth-child(4){
-  @apply delay-[30ms]
-}
-label span:nth-child(5){
-  @apply delay-[40ms]
-}
-label span:nth-child(6){
-  @apply delay-[50ms]
-}
-label span:nth-child(7){
-  @apply delay-[60ms]
-}
-label span:nth-child(8){
-  @apply delay-[70ms]
-}
-label span:nth-child(9){
-  @apply delay-[80ms]
-}
-label span:nth-child(10){
-  @apply delay-[90ms]
-}
-
-label span:nth-child(11){
-  @apply delay-[100ms]
-}
-label span:nth-child(12){
-  @apply delay-[110ms]
-}
-label span:nth-child(13){
-  @apply delay-[120ms]
-}
-label span:nth-child(14){
-  @apply delay-[130ms]
-}
-label span:nth-child(15){
-  @apply delay-[140ms]
-}
-label span:nth-child(16){
-  @apply delay-[150ms]
-}
-label span:nth-child(17){
-  @apply delay-[160ms]
-}
-label span:nth-child(18){
-  @apply delay-[170ms]
-}
-label span:nth-child(19){
-  @apply delay-[180ms]
-}
-label span:nth-child(110){
-  @apply delay-[190ms]
 }
