@@ -20,7 +20,7 @@ const fetchQuote = async function () {
 };
 
 const setColor = function () {
-  const colorNum = `rgba(${randomNumber(0,55)},${randomNumber(0,55)},${randomNumber(0,55)})`;
+  const colorNum = `rgba(${randomNumber(0,150)},${randomNumber(0,150)},${randomNumber(0,150)})`;
   bodyEl!.style.transition = ".5s ease all";
   bodyEl!.style.backgroundColor = colorNum;
   jokeText!.style.transition = ".5s ease all";
