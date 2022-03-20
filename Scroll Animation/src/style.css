@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .link {
-  @apply flex items-center p-7 text-2xl font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100  hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white border-[.1px] border-white/30;
+  @apply flex items-center p-7 text-2xl font-bold  rounded-lg   hover:shadow bg-gray-600 hover:bg-gray-500 text-white border-[.1px] border-white/30;
 }
 li {
   @apply transition-all duration-300 ease-in opacity-0;
