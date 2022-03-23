@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  @apply pt-20 pb-20 sm:pt-32 sm:pb-32 flex flex-wrap gap-16 justify-center m-auto min-h-screen text-gray-200;
+}
+
+.content a {
+  @apply bg-slate-800 w-80 grid rounded-2xl overflow-hidden h-[37rem] relative;
+  grid-template-rows: auto 1fr;
+}
+
+.content a img {
+  @apply rounded-3xl p-2 w-full;
+}
+
+.content a .data {
+  @apply bg-slate-700 w-full rounded-t-3xl backdrop-blur-sm grid justify-between items-center gap-x-4 p-3 gap-y-2 absolute bottom-0 transition-all duration-[350ms];
+  grid-template-columns: auto min-content;
+}
+
+.content a .title {
+  @apply text-3xl font-bold;
+}
+
+.content a .vote {
+  @apply bg-gray-800 p-1 px-2 rounded-lg text-xl text-red-400 font-bold;
+}
+
+.content a .releseDate {
+  @apply text-lg;
+}
+.content a .releseDate span {
+  @apply font-semibold text-FmGrSoftBlue;
+}
+.content a .description {
+  @apply text-lg absolute -bottom-full opacity-0 invisible transition-all duration-[350ms] bg-slate-700/75 backdrop-blur border-slate-700 rounded-3xl p-5 px-4 font-semibold;
+}
+.content a:hover .description {
+  @apply visible opacity-100 bottom-0;
+}
+.content a .description p {
+  @apply text-FmGrSoftViolet font-bold;
+}
+.content a .description p:hover {
+  @apply underline;
+}
