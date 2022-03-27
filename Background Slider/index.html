@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Background Slider</title>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col justify-center items-center overflow-x-hidden bg-cover transition-all duration-500 bg-center bg-opacity-30"
+  >
+    <main
+      class="text-gray-50 text-center grid gap-4 relative text-5xl items-center"
+    >
+      <img src="./src/assets/leftArr.svg" alt="" class="arrow prevBtn" />
+      <div
+        id="slideBox"
+        class="w-72 sm:w-96 md:w-[40rem] lg:w-[47rem] h-[32rem] flex flex-col justify-center gap-5 overflow-hidden"
+      >
+        <div class="slider"></div>
+        <div class="dots"></div>
+      </div>
+      <img src="./src/assets/rightArr.svg" alt="" class="arrow nextBtn" />
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

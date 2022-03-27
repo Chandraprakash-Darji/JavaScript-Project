@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  grid-template-columns: max-content 1fr max-content;
+}
+.arrow {
+  @apply w-14 z-10 hover:scale-105 transition-all duration-500 cursor-pointer active:scale-125;
+}
+.slider {
+  @apply h-[30rem] w-max flex gap-10 transition-all duration-500;
+}
+.slide {
+  @apply w-72 sm:w-96 md:w-[40rem] lg:w-[47rem] rounded-3xl bg-white/40 p-1 overflow-hidden;
+}
+.slide img {
+  @apply w-full h-full rounded-3xl object-cover;
+}
+.dots {
+  @apply flex gap-2 self-center;
+}
+.dot {
+  @apply w-2 h-2 bg-gray-400 rounded-full hover:bg-gray-50 transition-all duration-500 cursor-pointer;
+}
+.dot.active {
+  @apply bg-gray-50;
+}

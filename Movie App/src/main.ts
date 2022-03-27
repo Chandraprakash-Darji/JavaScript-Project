@@ -425,6 +425,5 @@ searchForm?.addEventListener("submit", (e) => {
   const query = search.value.split(" ").join("%22");
   const url = `https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&language=en-US&query=%22${query}`;
   console.log(query);
-  // fetchMovie(url);/
   updateDate(fetchMovie(url));
 });
