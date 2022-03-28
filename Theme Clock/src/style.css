@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hour {
+  @apply w-[15%] h-[2px] bg-white dark:bg-white absolute top-1/2 left-1/2 origin-left transition-all duration-300;
+}
+.min {
+  @apply w-3/12 h-[2px] bg-white/70 dark:bg-white/70 absolute top-1/2 left-1/2 origin-left transition-all duration-300;
+}
+.sec {
+  @apply w-3/12 h-[2px] bg-red-700 dark:bg-red-400 absolute top-1/2 left-1/2 origin-left transition-all duration-300;
+}
+.centerSpot {
+  @apply bg-white border-2 border-red-700 dark:border-red-400 w-3 rounded-full h-3 z-10;
+}
+.time {
+  @apply dark:text-gray-100 text-black/70 text-5xl font-bold transition-all duration-300;
+}
+.date {
+  @apply italic dark:text-gray-100 text-black/70 text-sm transition-all duration-300;
+}
