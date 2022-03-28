@@ -2,23 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: linear-gradient(
-    to bottom,
-    hsl(273, 90%, 45%) 0%,
-    hsl(273, 90%, 49%) 50%,
-    rgb(253, 22, 22) 0%
-  );
-} */
 input {
-  @apply block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400 focus:outline-none focus:ring-0 focus:border-blue-600;
+  @apply block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2  appearance-none text-black border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600;
 }
 label {
-  @apply absolute text-sm  text-gray-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+  @apply absolute text-sm  text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
 }
 .btn {
-  @apply text-white focus:ring-4 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 ;
+  @apply text-white focus:ring-4 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800;
 }
-.headline{
-  @apply text-white
+.headline {
+  @apply text-white;
 }
