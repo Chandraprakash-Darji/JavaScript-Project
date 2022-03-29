@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h3 {
+  @apply text-gray-400 text-center mb-2;
+}
+.clickMe {
+  @apply p-4 px-12 text-3xl text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300 relative overflow-hidden;
+}
+.circle {
+  @apply w-28 h-28 bg-white block absolute rounded-full scale-0 -translate-x-1/2 -translate-y-1/2;
+  animation: clickRipple ease-out .5s ;
+}
+
+@keyframes clickRipple {
+  100% {
+    @apply scale-[3] opacity-0;
+  }
+}
