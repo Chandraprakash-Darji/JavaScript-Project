@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Drawing App</title>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col justify-center items-center bg-[url('./src/assets/bg.png')]"
+  >
+    <main
+      class="max-w-3xl w-[30rem] sm:w-[38rem] md:w-full flex flex-col gap-8 bg-gray-200/60 backdrop-blur py-10 px-8 rounded-3xl border"
+    >
+      <!-- <div class="draw"> -->
+      <canvas
+        id="canvas"
+        class="border-2 border-blue-700 rounded-xl"
+        height="800"
+        width="700"
+      ></canvas>
+      <!-- </div> -->
+      <div class="setting flex text-3xl gap-4">
+        <button class="btn minus">&minus;</button>
+        <button class="btn size">20</button>
+        <button class="btn plus">&plus;</button>
+        <button class="btn colorBtn">
+          <input type="color" name="color" id="selectColor" class="h-11 w-11" />
+        </button>
+        <button class="btn erase mr-auto">Erase</button>
+        <button class="btn cross">&Cross;</button>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

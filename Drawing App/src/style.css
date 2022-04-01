@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply text-white rounded-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 active:scale-95;
+}
+.btn.colorBtn {
+  @apply p-2 active:scale-100;
+}
+
+.btn.size {
+  @apply active:scale-100 hover:bg-blue-600;
+}
