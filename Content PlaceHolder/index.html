@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Content Placeholder</title>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col justify-center items-center bg-[url('./src/assets/bg.png')]"
+  >
+    <main
+      class="flex flex-col justify-center items-center w-96 bg-gray-50/70 backdrop-blur rounded-xl border border-gray-50/50 overflow-hidden text-gray-900 transition-all duration-500"
+      style="font-family: 'Roboto', sans"
+    >
+      <div class="w-full">
+        <div id="HeroImg" class="overflow-hidden h-64 animate"></div>
+        <div class="data p-7 py-5">
+          <h1 id="heading" class="text-2xl font-bold animate animatedText"></h1>
+          <p id="headline" class="text-lg animate animatedText"></p>
+          <div class="animate animatedText"></div>
+          <div class="animate animatedText"></div>
+          <div
+            class="profile grid gap-3 justify-center items-center mt-5"
+            style="grid-template-columns: auto 1fr"
+          >
+            <div
+            id="profileLogo"
+              class="w-14 h-14 rounded-full overflow-hidden animate animatedProfile"
+            ></div>
+            <div id="ProfileData" class=" w-36">
+              <h2 class="text-lg font-bold animate animatedText"></h2>
+              <p class="text-sm animate animatedText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
