@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-2 rotate-90;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-800 rounded-full shadow-inner shadow-gray-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-500 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-600 rounded-full;
+}
+.stickyNav {
+  @apply bg-gray-900/70 backdrop-blur py-4;
+}
