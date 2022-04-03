@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-img {
+  @apply min-h-screen bg-cover bg-no-repeat bg-center;
+}
+.section-text {
+  @apply min-h-screen flex flex-col justify-center items-center;
+}
+.section-text h2 {
+  @apply text-3xl font-bold tracking-wider;
+}
+.section-text p {
+  @apply font-light italic;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 rotate-90;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-800 rounded-full shadow-inner shadow-gray-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-500 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-600 rounded-full;
+}

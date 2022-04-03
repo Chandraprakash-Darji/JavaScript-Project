@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Verical Slicer</title>
+  </head>
+
+  <body
+    class="h-screen overflow-hidden bg-slate-900 text-slate-50 flex relative"
+  >
+    <div class="textBox w-3/12 transition-all duration-500"></div>
+    <div class="imagesBox w-3/4 transition-all duration-500"></div>
+    <div
+      class="btns absolute text-gray-600 top-1/2 right-3/4 text-4xl translate-x-1/2 -translate-y-1/2"
+    >
+      <div
+        class="upKey p-3 px-4 grid place-content-center rounded rounded-bl-none bg-gray-100/60 backdrop-blur translate-x-1/2 cursor-pointer hover:text-gray-900 transition-all duration-500"
+      >
+        &Uarr;
+      </div>
+      <div
+        class="downKey p-3 px-4 grid place-content-center rounded rounded-tr-none bg-gray-100/60 backdrop-blur -translate-x-1/2 cursor-pointer hover:text-gray-900 transition-all duration-500"
+      >
+        &Darr;
+      </div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
