@@ -25,7 +25,7 @@
 }
 
 .profile .data p {
-  @apply py-5;
+  @apply py-5 max-w-[36rem];
 }
 
 .profile .data .stats {
@@ -39,7 +39,7 @@
   @apply font-bold;
 }
 .profile .data .recentRepos {
-  @apply flex flex-wrap gap-4 py-2 pt-5;
+  @apply flex flex-wrap gap-4 py-2 pt-5 max-w-[36rem];
 }
 .profile .data .recentRepos .repo {
   @apply bg-gray-900 px-2 py-1 rounded-md;

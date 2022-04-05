@@ -40,20 +40,20 @@ const fetchData = async (profileName: string, repos = false) => {
 
 // console.log(fetchData(username));
 
-const updateUI = (html:string) => {
+const updateUI = (html: string) => {
   ContentEl!.innerHTML = html;
 };
 
 const generateRepoLink = async () => {
   let returnHtml = ``;
   const data = await fetchData(username, true);
-  data.slice(0, 5).forEach((repo:any) => {
+  data.slice(0, 5).forEach((repo: any) => {
     returnHtml += `<a href="${repo.html_url}" target="_blank" class="repo">${repo.name}</a>`;
   });
   return returnHtml;
 };
 
-const profileCard = async (data:any) => {
+const profileCard = async (data: any) => {
   return `
     <div class="profile">
     <div class="Image">
@@ -64,10 +64,7 @@ const profileCard = async (data:any) => {
     </div>
     <div class="data">
       <h1>${data.name}</h1>
-      <p>
-        Front-end Learner from India. Like to Play with CSS. Currently
-        Mastering JavaScript
-      </p>
+      <p>${data.bio}</p>
       <div class="stats">
         <div class="followers"><span>${
           data.followers
@@ -90,15 +87,16 @@ const profileCard = async (data:any) => {
 formEl?.addEventListener("submit", async (e) => {
   e.preventDefault();
   username = searchEl.value.trim();
-  searchEl.disabled =true
+  searchEl.disabled = true;
   updateUI(spinner);
   try {
-      const data = await fetchData(username);
-      const html = await profileCard(data);
-      updateUI(html);
-    } catch (error) {
-        console.error(error);
-        updateUI(`<div class="w-max spinner"><h1> User not Found</h1> </div>`);
-    }
-    searchEl.disabled =false
+    const data = await fetchData(username);
+    console.log(data);
+    const html = await profileCard(data);
+    updateUI(html);
+  } catch (error) {
+    console.error(error);
+    updateUI(`<div class="w-max spinner"><h1> User not Found</h1> </div>`);
+  }
+  searchEl.disabled = false;
 });
