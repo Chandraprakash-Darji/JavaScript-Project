@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Double click Heart</title>
+  </head>
+
+  <body
+    class="h-screen flex flex-col gap-2 items-center justify-center bg-slate-900 text-slate-900 transition-all duration-1000"
+  >
+    <h2 class="styleMe">
+      Double click on the image to
+      <span class="font-bold"> ❤️ </span>
+      it
+    </h2>
+    <p class="styleMe">
+      You liked it <span class="click text-red-600 font-bold"> 0 </span> times
+    </p>
+    <div id="imgBox" class="styleMe Img rounded-lg relative">
+      <img
+        src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+        alt="Car Img"
+        class="rounded-lg"
+      />
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

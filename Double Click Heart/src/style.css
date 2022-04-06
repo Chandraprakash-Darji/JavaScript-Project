@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.styleMe {
+  @apply p-4 px-12 text-3xl text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300;
+}
+
+p.styleMe {
+  @apply text-base p-2 px-6;
+}
+
+.Img.styleMe {
+  @apply px-4;
+}
+
+#heart {
+  @apply opacity-70 font-bold absolute scale-0;
+  animation: grow 1s  ease;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    @apply opacity-0;
+    transform: scale(6);
+  }
+}
