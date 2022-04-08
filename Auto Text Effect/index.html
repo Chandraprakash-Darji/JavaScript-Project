@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/Images/c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Auto Text Effect</title>
+  </head>
+
+  <body
+    class="h-screen flex flex-col gap-2 items-center justify-center bg-slate-900 text-slate-900 transition-all duration-1000"
+  >
+    <p class="styleMe" id="animatedText">We Love Programming !!!</p>
+
+    <div id="inputContain" class="styleMe absolute bottom-0 m-4">
+      Speed :
+      <input
+        type="number"
+        name="speen"
+        id="speed"
+        min="1"
+        max="10"
+        value="1"
+        class="text-white p-1 bg-white/20 text-center w-16 rounded-lg ml-2"
+      />
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

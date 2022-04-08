@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.styleMe {
+  @apply p-4 px-12 text-3xl text-gray-700 bg-gray-100 dark:bg-gray-700 dark:text-gray-300  w-full text-center backdrop-blur;
+}
+#inputContain.styleMe {
+  @apply py-2 px-6;
+}
