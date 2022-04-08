@@ -15,8 +15,8 @@ p.styleMe {
 }
 
 #heart {
-  @apply opacity-70 font-bold absolute scale-0;
-  animation: grow 1s  ease;
+  @apply opacity-100 text-xl font-bold absolute scale-0 select-none z-10 block;
+  animation: grow 1s ease;
 }
 
 @keyframes grow {
