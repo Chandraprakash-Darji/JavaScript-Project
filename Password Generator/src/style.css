@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 input {
-  @apply block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2  appearance-none text-black border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600;
-}
-label {
-  @apply absolute text-sm  text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+  @apply block p-2.5  text-sm bg-transparent text-black outline-none;
 }
 .btn {
-  @apply text-white focus:ring-4 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800;
+  @apply text-white focus:ring-4 rounded-lg text-sm w-full px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800;
 }
-.headline {
-  @apply text-gray-700;
+.copiedTitle {
+  @apply absolute left-full ml-0 opacity-0 invisible bg-blue-600 text-white px-3 py-1 rounded after:absolute after:border-transparent after:border-[7px] after:border-t-transparent after:border-l-transparent after:border-b-transparent after:w-0 after:h-0 after:border-blue-600 after:right-full after:top-1/2 after:-translate-y-1/2 transition-all duration-500;
+}
+.copiedTitle.active {
+  @apply ml-5 opacity-100 visible;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
 
-    <title>Print Form</title>
+    <title>Password Generator</title>
   </head>
 
   <body
@@ -16,92 +16,88 @@
       class="bg-gray-50/75 backdrop-blur py-10 px-8 rounded-3xl min-w-[24rem]"
     >
       <form>
-        <div class="relative z-0 mb-6 w-full group">
+        <h1 class="w-full text-center pb-3 text-xl">Password Generator</h1>
+        <div id="passwordField"></div>
+        <div
+          class="relative flex justify-between items-center z-0 mb-6 w-full border-2 border-gray-600 rounded-lg"
+        >
           <input
-            type="email"
-            name="floating_email"
-            class="peer"
-            placeholder=" "
-            required=""
+            type="text"
+            name="passWordArea"
+            id="passWordArea"
+            class="w-full border-r-2 border-gray-600 tracking-wider"
+            disabled
           />
-          <label for="floating_email" class="">Email address</label>
-        </div>
-        <div class="relative z-0 mb-6 w-full group">
-          <input
-            type="password"
-            name="floating_password"
-            id="floating_password"
-            class="peer"
-            placeholder=" "
-            required=""
-          />
-          <label for="floating_password" class="">Password</label>
-        </div>
-        <div class="relative z-0 mb-6 w-full group">
-          <input
-            type="password"
-            name="repeat_password"
-            id="floating_repeat_password"
-            class="peer"
-            placeholder=" "
-            required=""
-          />
-          <label for="floating_repeat_password" class=""
-            >Confirm password</label
+          <div
+            id="copyBtn"
+            class="copy w-14 h-11 flex justify-center items-center cursor-pointer transition-all active:rotate-45 relative"
           >
+            <img
+              src="./src/assets/copy.svg"
+              alt="Copy Icon"
+              class="transition-all duration-500"
+            />
+          </div>
+          <span class="copiedTitle">Copied</span>
         </div>
-        <div class="grid xl:grid-cols-2 xl:gap-6">
-          <div class="relative z-0 mb-6 w-full group">
-            <input
-              type="text"
-              name="floating_first_name"
-              id="floating_first_name"
-              class="peer"
-              placeholder=" "
-              required=""
-            />
-            <label for="floating_first_name" class="">First name</label>
-          </div>
-          <div class="relative z-0 mb-6 w-full group">
-            <input
-              type="text"
-              name="floating_last_name"
-              id="floating_last_name"
-              class="peer"
-              placeholder=" "
-              required=""
-            />
-            <label for="floating_last_name" class="">Last name</label>
-          </div>
+        <div class="flex justify-between items-center z-0 mb-6 w-full">
+          <label class="text-lg" for="passLenght">Password Lenght</label>
+          <input
+            type="number"
+            name="passLenght"
+            id="passLenght"
+            min="4"
+            max="20"
+            placeholder="3"
+            value="8"
+            class="rounded-lg border-2 border-gray-600"
+          />
         </div>
-        <div class="grid xl:grid-cols-2 xl:gap-6">
-          <div class="relative z-0 mb-6 w-full group">
-            <input
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              name="floating_phone"
-              id="floating_phone"
-              class="peer"
-              placeholder=" "
-              required=""
-            />
-            <label for="floating_phone" class=""
-              >Phone number (123-456-7890)</label
-            >
-          </div>
-          <div class="relative z-0 mb-6 w-full group">
-            <input
-              type="text"
-              name="floating_company"
-              id="floating_company"
-              class="peer"
-              placeholder=" "
-              required=""
-            />
-            <label for="floating_company" class="">Company (Ex. Google)</label>
-          </div>
+        <div class="flex justify-between items-center z-0 mb-6 w-full">
+          <label class="text-lg" for="upperCaseLetters"
+            >Include uppercase letters</label
+          >
+          <input
+            type="checkbox"
+            checked
+            name="upperCaseLetters"
+            id="upperCaseLetters"
+            class="w-5 h-5"
+          />
         </div>
-        <button type="submit" class="btn print:hidden">Submit</button>
+        <div class="flex justify-between items-center z-0 mb-6 w-full">
+          <label class="text-lg" for="lowerCaseLetters"
+            >Include lowercase letters</label
+          >
+          <input
+            type="checkbox"
+            checked
+            name="lowerCaseLetters"
+            id="lowerCaseLetters"
+            class="w-5 h-5"
+          />
+        </div>
+        <div class="flex justify-between items-center z-0 mb-6 w-full">
+          <label class="text-lg" for="lowerNumber">Include numbers</label>
+          <input
+            type="checkbox"
+            checked
+            name="lowerNumber"
+            id="lowerNumber"
+            class="w-5 h-5"
+          />
+        </div>
+        <div class="flex justify-between items-center z-0 mb-6 w-full">
+          <label class="text-lg" for="lowerSymbols">Include Symbols</label>
+          <input
+            type="checkbox"
+            checked
+            name="lowerSymbols"
+            id="lowerSymbols"
+            class="w-5 h-5"
+          />
+        </div>
+        <button type="submit" class="btn generateBtn">Generate Password</button>
       </form>
     </main>
     <script type="module" src="./src/main.ts"></script>
